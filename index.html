@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orçamento 2027: a linha de nuvem que não fecha | Optidata</title>
+<meta name="description" content="Tráfego de saída, câmbio, capacidade parada e incidentes fazem a linha de nuvem escapar do orçado. Feche 2027 com a Optidata: mande a fatura de hoje e receba a estimativa do ano.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="O orçamento de 2027 fecha em dezembro. A fatura da nuvem, não.">
+<meta property="og:description" content="Mande a fatura de hoje e receba a estimativa de 2027 na Optidata, com tráfego de saída incluso e cobrança na moeda local.">
+<!-- Pendências: número do WhatsApp comercial (WA_NUMERO no fim do arquivo), URL definitiva, assinatura do artigo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="https://www.optidata.com/favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --p:#8d0de3;--p-hover:#7800c6;--p-active:#6500a8;--p-soft:#f4e9fb;--p-soft2:#ead5f8;
+  --canvas:#f8f7fa;--surface:#fff;--subtle:#f2eef5;
+  --t1:#201525;--t2:#584d5e;--t3:#6f6475;
+  --b1:#ebe5ee;--b2:#d9d0de;--b3:#8b7d92;
+  --ok:#147a52;--ok-s:#eaf8f1;--ok-b:#9cd9bd;
+  --warn:#a45a00;--warn-b:#e8c769;
+  --b200:#d9b3ff;--b300:#cba5fd;--b900:#3f026a;--b950:#1e002f;--ink:#0b0019;
+  --accent:#fde116;
+  --dc:#151018;--dt1:#f7f2f9;--dt2:#d3c8d7;--dt3:#b0a2b5;
+  --hero-bg:radial-gradient(at 100% 0%,rgba(175,99,253,.32) 0%,transparent 55%),radial-gradient(at 0% 100%,rgba(253,225,22,.10) 0%,transparent 60%),linear-gradient(180deg,#0b0019 0%,#1e002f 45%,#3f026a 100%);
+  --focus-ring:0 0 0 2px #fff,0 0 0 4px var(--p);
+  --gutter:16px;--max:1208px;
+}
+@media (min-width:768px){:root{--gutter:24px}}
+@media (min-width:1280px){:root{--gutter:32px}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:"Manrope",ui-sans-serif,system-ui,sans-serif;color:var(--t1);background:var(--surface);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums;line-height:1.6;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+.wrap{max-width:calc(var(--max) + 2*var(--gutter));margin:0 auto;padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+.label{font-size:.75rem;line-height:1.4;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--t3)}
+.h2{font-size:1.75rem;line-height:1.2;letter-spacing:-.02em;font-weight:600}
+.lede{font-size:1.125rem;line-height:1.6;color:var(--t2)}
+.chev{width:16px;height:16px;flex:none}
+
+/* botões (padrão do site) */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:9999px;border:1px solid transparent;background:var(--p);color:#fff;font:600 1rem/1 "Manrope",sans-serif;text-decoration:none;cursor:pointer;white-space:nowrap;transition:background-color 160ms cubic-bezier(.2,.8,.2,1),border-color 160ms,box-shadow 160ms}
+.btn:hover{background:var(--p-hover)}
+.btn:active{background:var(--p-active);transform:scale(.98)}
+.btn:focus-visible,.link:focus-visible,.float:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+.btn.lg{min-height:56px;padding:0 28px}
+.btn.sm{min-height:44px;padding:0 18px;font-size:.9375rem}
+.btn.ghost-d{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);color:#fff}
+.btn.ghost-d:hover{background:rgba(255,255,255,.12)}
+.btn svg.wa{width:20px;height:20px}
+.link{display:inline-block;color:var(--p);font-weight:600;text-decoration:none;border-radius:6px}
+.link .chev{display:inline-block;vertical-align:-3px;margin-left:4px}
+.link:hover{color:var(--p-hover);text-decoration:underline;text-underline-offset:3px}
+@media (prefers-reduced-motion:reduce){.btn,.btn:active{transition:none;transform:none}}
+.chip{width:44px;height:44px;border-radius:12px;background:var(--surface);border:1px solid var(--b1);display:grid;place-items:center;flex:none}
+.chip img{width:30px;height:30px}
+
+/* cabeçalho */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:calc(68px + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px);background:rgba(21,16,24,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:100%;gap:16px}
+.top .logo img{height:26px;width:auto}
+.top nav{display:flex;align-items:center;gap:28px;font-size:.9375rem;color:var(--dt2)}
+.top nav a{text-decoration:none}
+.top nav a:hover{color:#fff}
+.top .actions{display:flex;align-items:center;gap:12px}
+
+/* hero */
+.hero{background:var(--hero-bg);color:var(--dt1);padding:140px 0 104px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-10%;top:10%;width:60%;height:90%;background:radial-gradient(closest-side,rgba(141,13,227,.26),transparent 70%);pointer-events:none}
+.hero .grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,46fr) minmax(0,54fr);gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(203,165,253,.28);border-radius:9999px;padding:7px 14px;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--b200)}
+.hero h1{font-size:clamp(2.25rem,3.4vw,3rem);line-height:1.06;letter-spacing:-.035em;font-weight:600;color:#fff;margin:22px 0 20px}
+.hero h1 span{display:block;color:var(--accent)}
+.hero .lede{color:var(--dt2);max-width:32em}
+.byline{display:flex;align-items:center;gap:14px;margin-top:28px}
+.byline .av{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);display:grid;place-items:center;flex:none}
+.byline .av img{width:18px;height:18px}
+.byline b{display:block;font-size:.9375rem;font-weight:600;color:#fff;line-height:1.3}
+.byline small{display:block;font-size:.875rem;color:var(--dt3);line-height:1.4}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* card do gráfico (UI clara sobre o hero, como o print da plataforma no site) */
+.ui{background:var(--surface);color:var(--t1);border-radius:20px;padding:24px 24px 20px;box-shadow:0 40px 90px rgba(11,0,25,.55),0 0 0 1px rgba(255,255,255,.06)}
+.ui .uh{display:flex;align-items:center;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--b1)}
+.ui .uh .chip{width:40px;height:40px;border-radius:10px;background:var(--p-soft);border-color:var(--p-soft2)}
+.ui .uh .chip img{width:26px;height:26px}
+.ui .uh b{display:block;font-size:1rem;font-weight:600;line-height:1.3}
+.ui .uh small{display:block;font-size:.8125rem;color:var(--t3)}
+.ui .uh .note{margin-left:auto;font-size:.75rem;color:var(--t3);border:1px solid var(--b1);border-radius:8px;padding:4px 10px}
+.ui svg.chart{width:100%;height:auto;margin-top:12px}
+.ui .uf{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px 20px;padding-top:14px;border-top:1px solid var(--b1);font-size:.8125rem;color:var(--t2)}
+.ui .legend{display:flex;flex-wrap:wrap;gap:6px 18px}
+.ui .legend span{display:inline-flex;align-items:center;gap:7px}
+.ui .legend i{display:inline-block;width:11px;height:11px;border-radius:3px}
+.ui .legend i.in{background:var(--b300)}
+.ui .legend i.over{background:var(--warn-b);box-shadow:inset 0 0 0 1.5px var(--warn)}
+.ui .legend i.line{width:16px;height:0;border-top:2px dashed var(--t1);border-radius:0}
+.ui .uf strong{color:var(--warn);font-weight:600}
+.months-s,.ann-list{display:none}
+.ann-list{list-style:none;margin-top:10px;font-size:.875rem}
+.ann-list li{display:flex;justify-content:space-between;padding:8px 0;border-top:1px solid var(--b1);font-weight:600}
+.ann-list li span{color:var(--t3);font-weight:400}
+
+/* artigo */
+.article{padding:96px 0 112px}
+.article .wrap{display:grid;grid-template-columns:minmax(0,742px) 272px;justify-content:space-between;gap:64px}
+.prose>*+*{margin-top:20px}
+.prose p{font-size:1.125rem;line-height:1.7;color:var(--t1)}
+.prose h2{font-size:1.75rem;line-height:1.2;letter-spacing:-.02em;font-weight:600;margin-top:72px;scroll-margin-top:96px}
+.prose h2:first-child{margin-top:0}
+.prose p.label{font-size:.75rem;line-height:1.4;color:var(--t3)}
+.prose .kicker{margin-top:72px}
+.prose .kicker+h2{margin-top:10px}
+.callout{background:var(--p-soft);border-left:3px solid var(--p);border-radius:0 12px 12px 0;padding:22px 26px;font-size:1.375rem;line-height:1.35;letter-spacing:-.015em;font-weight:600;color:var(--t1)}
+.prose .callout{margin-top:32px}
+
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.prose .stats{margin-top:32px}
+.stat{border:1px solid var(--b1);border-radius:16px;padding:24px;background:var(--surface)}
+.stat b{display:block;font-size:3rem;line-height:1;letter-spacing:-.035em;font-weight:600}
+.prose .stat p{font-size:1rem;line-height:1.55;color:var(--t2);margin-top:12px}
+.stat small{display:block;margin-top:14px;padding-top:12px;border-top:1px solid var(--b1);font-size:.8125rem;color:var(--t3)}
+.prose p.source{font-size:.875rem;color:var(--t3);margin-top:14px}
+.source a{color:var(--t2)}
+
+.inline-cta{border-top:1px solid var(--b1);border-bottom:1px solid var(--b1);padding:28px 0}
+.prose .inline-cta{margin-top:40px}
+.prose .inline-cta p{font-size:1.125rem;font-weight:600;line-height:1.5}
+.inline-cta .link{margin-top:14px;font-size:1rem}
+
+.prose .point{margin-top:48px;scroll-margin-top:96px}
+.point .ph{display:flex;align-items:center;gap:16px}
+.point h3{font-size:1.375rem;line-height:1.3;letter-spacing:-.015em;font-weight:600}
+.point .tag{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--warn);display:block;margin-bottom:2px}
+.point p{margin-top:16px}
+.opt{display:grid;grid-template-columns:26px 1fr;gap:14px;margin-top:20px;background:#fbf7fe;border:1px solid var(--p-soft2);border-radius:12px;padding:20px 22px}
+.opt .ck{width:26px;height:26px;border-radius:8px;background:var(--ok-s);border:1px solid var(--ok-b);display:grid;place-items:center}
+.opt .ck svg{width:13px;height:13px}
+.opt .label{display:block;margin-bottom:6px;color:var(--p)}
+.opt span.t{display:block;font-size:1.125rem;line-height:1.5;font-weight:500;color:var(--t1)}
+.prose .cta-row{margin-top:28px}
+.qa{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:20px}
+.qa>div{border-radius:12px;padding:18px 20px}
+.qa .ask{background:var(--canvas);border:1px solid var(--b1)}
+.qa .ans{background:#fbf7fe;border:1px solid var(--p-soft2)}
+.qa .label{display:block;margin-bottom:8px}
+.qa .ans .label{color:var(--p)}
+.qa span.t{display:block;font-size:1rem;line-height:1.55;font-weight:500;color:var(--t1)}
+
+/* bloco de oferta dentro do artigo (escuro contido) */
+.offer{position:relative;overflow:hidden;border-radius:24px;background:linear-gradient(160deg,var(--ink) 0%,var(--b950) 50%,var(--b900) 100%);color:var(--dt1);padding:40px;isolation:isolate;scroll-margin-top:96px}
+.prose .offer{margin-top:56px}
+.offer::before{content:"";position:absolute;right:-20%;top:-40%;width:70%;height:90%;background:radial-gradient(closest-side,rgba(175,99,253,.3),transparent);z-index:-1}
+.offer .label{color:var(--accent)}
+.offer h3{font-size:1.75rem;line-height:1.2;letter-spacing:-.02em;font-weight:600;color:#fff;margin-top:12px}
+.offer h3 span{display:block;color:var(--accent)}
+.prose .offer>p{font-size:1.125rem;line-height:1.6;color:var(--dt2);margin-top:14px;max-width:34em}
+.offer .og{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;margin-top:28px;align-items:start}
+.steps{list-style:none;border-top:1px solid rgba(203,165,253,.22)}
+.steps li{padding:12px 0;border-bottom:1px solid rgba(203,165,253,.22);font-size:.9375rem;line-height:1.5;color:var(--dt2)}
+.steps b{display:block;color:var(--b200);font-weight:600;font-size:.875rem}
+.offer .btn{margin-top:22px}
+.bill{background:var(--surface);color:var(--t1);border-radius:14px;padding:22px 22px 18px;box-shadow:0 24px 60px rgba(11,0,25,.5)}
+.bill .bh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--b1)}
+.bill .bh img{height:16px;width:auto}
+.bill .bh b{display:block;font-size:1.125rem;font-weight:600;margin-top:10px;letter-spacing:-.01em}
+.bill .bh small{font-size:.75rem;color:var(--t3);text-align:right;line-height:1.5}
+.bill table{width:100%;border-collapse:collapse}
+.bill td{padding:10px 0;border-bottom:1px solid var(--b1);font-size:.875rem}
+.bill td:last-child{text-align:right}
+.bill .blur{filter:blur(4.5px);color:var(--t2);font-weight:600;user-select:none}
+.bill .inc{position:relative;display:inline-block;color:var(--ok);font-weight:600;padding:0 4px}
+.bill .inc svg{position:absolute;left:-11px;top:-8px;width:calc(100% + 22px);height:calc(100% + 16px);max-width:none;overflow:visible;pointer-events:none}
+.bill tr.tot td{border-bottom:0;padding-top:14px;font-weight:600;font-size:.9375rem}
+.prose .bill p.foot{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:.75rem;line-height:1.4;color:var(--t3)}
+.bill .foot img{width:18px;height:18px}
+
+/* card de IA */
+.aicard{display:grid;grid-template-columns:auto 1fr;gap:18px;border:1px solid var(--b1);border-radius:16px;padding:24px;background:var(--canvas)}
+.prose .aicard{margin-top:32px}
+.aicard b{display:block;font-size:1.125rem;font-weight:600;line-height:1.4}
+.prose .aicard p{font-size:1rem;line-height:1.6;color:var(--t2);margin-top:6px}
+.aicard .link{margin-top:12px}
+
+/* checklist */
+.check{list-style:none;border:1px solid var(--b1);border-radius:16px;overflow:hidden;background:var(--surface)}
+.prose .check{margin-top:28px}
+.check li{display:grid;grid-template-columns:24px 1fr;gap:16px;padding:18px 24px;border-top:1px solid var(--b1);font-size:1rem;line-height:1.55}
+.check li:first-child{border-top:0}
+.check li i{width:22px;height:22px;border-radius:6px;background:var(--ok-s);border:1px solid var(--ok-b);display:grid;place-items:center;margin-top:1px}
+.check li i svg{width:12px;height:12px}
+
+/* autor */
+.author{display:flex;gap:16px;align-items:center;border-top:1px solid var(--b1);padding-top:28px}
+.prose .author{margin-top:56px}
+.author .av{width:52px;height:52px;border-radius:50%;background:var(--p-soft);display:grid;place-items:center;flex:none}
+.author .av img{width:22px;height:22px}
+.author b{display:block;font-size:1rem;font-weight:600}
+.author small{display:block;font-size:.875rem;color:var(--t3);line-height:1.5}
+
+/* lateral */
+.aside .sticky{position:sticky;top:100px}
+.toc .label{color:var(--p)}
+.toc ol{list-style:none;margin-top:16px;border-left:2px solid var(--b1)}
+.toc a{display:block;padding:7px 0 7px 16px;margin-left:-2px;border-left:2px solid transparent;font-size:.9375rem;line-height:1.45;color:var(--t2);text-decoration:none}
+.toc a:hover{color:var(--t1)}
+.toc a.on{border-left-color:var(--p);color:var(--t1);font-weight:600}
+.side-cta{margin-top:32px;border:1px solid var(--b1);border-radius:16px;padding:20px;background:var(--canvas)}
+.side-cta b{display:block;font-size:1rem;font-weight:600;margin-top:14px}
+.side-cta p{font-size:.875rem;color:var(--t2);margin-top:6px;line-height:1.55}
+.side-cta .btn{margin-top:16px;width:100%}
+
+/* dobras gerais */
+.fold{padding:112px 0}
+.fold.neutral{background:var(--canvas)}
+.head-c{max-width:44rem}
+.head-c .h2{margin-top:12px}
+.head-c .lede{margin-top:14px}
+
+/* como funciona */
+.how .grid{display:grid;grid-template-columns:minmax(0,55fr) minmax(0,45fr);gap:64px;align-items:center}
+.mosaic{display:grid;grid-template-columns:1.15fr 1fr;grid-template-rows:1fr 1fr;gap:12px;height:520px}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:16px;min-height:0}
+.mosaic .a{grid-row:1/3}
+.how-steps{list-style:none;margin-top:32px}
+.how-steps li{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 0;border-top:1px solid var(--b1)}
+.how-steps li:last-child{border-bottom:1px solid var(--b1)}
+.how-steps b{display:block;font-size:1.125rem;font-weight:600;line-height:1.4}
+.how-steps span{display:block;font-size:1rem;color:var(--t2);margin-top:2px;line-height:1.55}
+.how .btn{margin-top:32px}
+
+/* cases */
+.cases .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:48px}
+.case{border:1px solid var(--b1);border-radius:20px;background:var(--surface);padding:32px;display:flex;flex-direction:column}
+.case.big{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,42fr) minmax(0,58fr);padding:0;overflow:hidden}
+.case.big .txt{padding:40px;display:flex;flex-direction:column}
+.case.big img{width:100%;height:100%;object-fit:cover;min-height:340px}
+.case q{display:block;font-size:1.375rem;line-height:1.4;letter-spacing:-.015em;font-weight:500;color:var(--t1);quotes:"\201C" "\201D"}
+.case .who{margin-top:auto;padding-top:28px}
+.case .who b{display:block;font-size:1rem;font-weight:600}
+.case .who small{display:block;font-size:.875rem;color:var(--t3)}
+.case .link{margin-top:16px;font-size:.9375rem;align-self:flex-start}
+.cases .all{display:flex;justify-content:flex-end;margin-top:24px}
+
+/* confiança */
+.trust{border-radius:24px;background:var(--hero-bg);color:var(--dt1);padding:56px 64px;position:relative;overflow:hidden}
+.trust .top-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end}
+.trust .h2{color:#fff;margin-top:12px}
+.trust .label{color:var(--b200)}
+.trust .top-row>p{color:var(--dt2);font-size:1rem;line-height:1.6}
+.seals{display:flex;align-items:flex-start;gap:40px;margin-top:44px;padding-top:32px;border-top:1px solid rgba(203,165,253,.2)}
+.seals .grp .label{color:var(--dt2)}
+.seals .row{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin-top:16px}
+.seals img{height:44px;width:auto;filter:invert(1);opacity:.92}
+.seals .sep{width:1px;align-self:stretch;background:rgba(203,165,253,.22)}
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--b1);border-radius:20px;background:var(--canvas);margin-top:16px;overflow:hidden}
+.nums>div{padding:32px 32px 30px;border-left:1px solid var(--b1)}
+.nums>div:first-child{border-left:0}
+.nums b{display:block;font-size:2.5rem;line-height:1;letter-spacing:-.03em;font-weight:600;margin-top:28px}
+.nums span.d{display:block;font-size:.75rem;line-height:1.5;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--t2);margin-top:12px;max-width:18em}
+
+/* perguntas */
+.faq .grid{display:grid;grid-template-columns:minmax(0,36fr) minmax(0,64fr);gap:64px}
+.faq details{border:1px solid var(--b2);border-radius:12px;background:var(--surface)}
+.faq details+details{margin-top:12px}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;font-size:1rem;font-weight:600;line-height:1.45;border-radius:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary svg{width:18px;height:18px;flex:none;color:var(--t3);transition:transform 160ms}
+.faq details[open] summary svg{transform:rotate(45deg)}
+.faq summary:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+.faq details p{padding:0 24px 22px;font-size:1rem;color:var(--t2);line-height:1.65}
+
+/* conversão final */
+.final{background:var(--dc) url(https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-final-gradient.webp) center bottom/cover no-repeat;color:var(--dt1);padding:128px 0 168px;text-align:center}
+.final p.label{color:var(--b200);font-size:.75rem;margin:0 auto}
+.final h2{font-size:clamp(2rem,3.2vw,2.75rem);line-height:1.1;letter-spacing:-.03em;font-weight:600;color:#fff;margin:16px auto 0;max-width:20em}
+.final p{color:var(--dt2);font-size:1.125rem;max-width:36em;margin:18px auto 0}
+.final .ctas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:36px}
+.final small{display:block;max-width:40em;margin:24px auto 0;font-size:.8125rem;color:var(--dt3);line-height:1.55}
+.final small a{color:var(--dt2)}
+
+/* rodapé */
+footer{background:var(--dc);color:var(--dt2);border-top:1px solid rgba(255,255,255,.07);padding:64px 0 32px}
+footer .fr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+footer .logo img{height:28px;width:auto}
+footer .about{font-size:.9375rem;line-height:1.6;margin-top:18px;max-width:26em}
+footer .sig{font-size:1.125rem;font-weight:600;color:#fff;line-height:1.4;text-align:right}
+footer .sig span{color:var(--b200)}
+footer .offices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,.08);font-size:.875rem;line-height:1.55}
+footer .offices b{display:block;color:#fff;font-weight:600;font-size:.9375rem;margin-bottom:4px}
+footer .legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);font-size:.875rem}
+footer .legal nav{display:flex;flex-wrap:wrap;gap:8px 24px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+
+/* botão fixo */
+.float{position:fixed;right:calc(24px + env(safe-area-inset-right,0px));bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:40;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 22px 0 18px;border-radius:9999px;background:var(--p);color:#fff;font-weight:600;font-size:.9375rem;text-decoration:none;box-shadow:0 12px 32px rgba(141,13,227,.35),0 2px 6px rgba(32,21,37,.2)}
+.float:hover{background:var(--p-hover)}
+.float svg{width:20px;height:20px}
+
+/* responsivo */
+@media (max-width:1100px){
+  .top nav{display:none}
+  .article .wrap{grid-template-columns:minmax(0,1fr)}
+  .aside{display:none}
+  .prose{max-width:742px;margin:0 auto;width:100%}
+}
+@media (max-width:1023px){
+  .hero .grid,.how .grid,.faq .grid,.trust .top-row,footer .fr{grid-template-columns:1fr}
+  .hero .grid{gap:48px}
+  .how .grid{gap:40px}
+  .faq .grid{gap:32px}
+  .trust .top-row{gap:16px}
+  .nums{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nums>div:nth-child(3){border-left:0}
+  .nums>div:nth-child(n+3){border-top:1px solid var(--b1)}
+  .case.big{grid-template-columns:1fr}
+  .case.big img{min-height:220px;max-height:300px;order:-1}
+  footer .sig{text-align:left}
+  .seals{flex-direction:column;gap:28px}
+  .seals .sep{display:none}
+}
+@media (max-width:767px){
+  .top .actions .btn.ghost-d{display:none}
+  .top .logo img{height:22px}
+  .hero{padding:108px 0 72px}
+  .article{padding:64px 0 80px}
+  .fold{padding:80px 0}
+  .prose h2,.prose .kicker{margin-top:56px}
+  .prose p{font-size:1rem;line-height:1.7}
+  .callout{font-size:1.125rem;padding:18px 20px}
+  .stats,.qa,.cases .grid{grid-template-columns:1fr}
+  .stat b{font-size:2.5rem}
+  .offer{padding:28px 20px}
+  .offer h3{font-size:1.5rem}
+  .offer .og{grid-template-columns:1fr}
+  .bill{padding:18px 16px 14px}
+  .ui{padding:18px 16px 16px;border-radius:16px}
+  .ui .uh .note{display:none}
+  .ann,.months,.orc{display:none}
+  .months-s{display:inline}
+  .ann-list{display:block}
+  .mosaic{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .mosaic .a{grid-row:auto;grid-column:1/-1;aspect-ratio:4/3}
+  .mosaic .b,.mosaic .c{aspect-ratio:1}
+  .case,.case.big .txt{padding:24px}
+  .case q{font-size:1.125rem}
+  .trust{padding:36px 24px}
+  .seals img{height:36px}
+  .nums{grid-template-columns:1fr}
+  .nums>div{border-left:0;border-top:1px solid var(--b1);padding:24px}
+  .nums>div:first-child{border-top:0}
+  .nums b{margin-top:18px}
+  .final{padding:88px 0 120px}
+  footer .offices{grid-template-columns:1fr}
+  .float span{display:none}
+  .float{padding:0 15px;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+  .hero .ctas .btn{width:100%}
+  .btn.lg{white-space:normal;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="https://www.optidata.com/br"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-optidata-logo-white.svg" alt="Optidata" width="166" height="28"></a>
+    <nav aria-label="Seções do artigo">
+      <a href="#numeros">Números</a>
+      <a href="#pontos">Onde a fatura escapa</a>
+      <a href="#entrega">A revisão</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
+    <div class="actions">
+      <a class="btn sm ghost-d" href="https://www.optidata.com/br">Conhecer a Optidata</a>
+      <a class="btn sm" data-wa="topo" href="#revisao">Falar com um especialista</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="pill">Planejamento 2027 · Custos de nuvem</span>
+      <h1>O orçamento de 2027 fecha em dezembro. <span>A fatura da nuvem, não.</span></h1>
+      <p class="lede">Tráfego de saída, câmbio, capacidade parada e incidentes fazem a linha de nuvem escapar do orçado. Na Optidata, o tráfego de saída é incluso, a cobrança é na moeda local e você vê a estimativa do mês antes de confirmar. Mande a fatura de hoje e feche 2027 com a conta certa.</p>
+      <div class="byline">
+        <div class="av"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-optidata-mark-white.svg" alt=""></div>
+        <div><b>Equipe Optidata</b><small>6 min de leitura</small></div>
+      </div>
+      <div class="ctas">
+        <a class="btn lg" data-wa="hero" href="#revisao"><svg class="wa" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.8a7.2 7.2 0 0 0-6.2 10.9L2.9 17l3.4-.9A7.2 7.2 0 1 0 10 2.8z"/></svg>Revisar minha fatura no WhatsApp</a>      </div>
+    </div>
+
+    <figure class="ui" aria-label="Gráfico ilustrativo: fatura de nuvem mês a mês contra a linha do orçado, com quatro meses acima do orçamento">
+      <div class="uh">
+        <span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-price.svg" alt=""></span>
+        <div><b>Fatura x orçado</b><small>Linha de nuvem · 2027</small></div>
+        <span class="note">Ilustrativo</span>
+      </div>
+      <svg class="chart" viewBox="0 0 640 332" aria-hidden="true">
+        <g font-family="Manrope, sans-serif">
+          <g stroke="#ebe5ee"><line x1="44" y1="146" x2="624" y2="146"/><line x1="44" y1="196" x2="624" y2="196"/><line x1="44" y1="246" x2="624" y2="246"/></g>
+          <line x1="44" y1="296" x2="624" y2="296" stroke="#d9d0de"/>
+          <g fill="#cba5fd">
+            <rect x="56.2" y="116" width="24" height="180" rx="3"/><rect x="104.5" y="108" width="24" height="188" rx="3"/>
+            <rect x="201.2" y="106" width="24" height="190" rx="3"/><rect x="249.5" y="100" width="24" height="196" rx="3"/>
+            <rect x="346.2" y="110" width="24" height="186" rx="3"/><rect x="394.5" y="102" width="24" height="194" rx="3"/>
+            <rect x="491.2" y="98" width="24" height="198" rx="3"/><rect x="587.8" y="104" width="24" height="192" rx="3"/>
+            <rect x="152.8" y="97" width="24" height="199" rx="3"/><rect x="297.8" y="97" width="24" height="199" rx="3"/>
+            <rect x="442.8" y="97" width="24" height="199" rx="3"/><rect x="539.5" y="97" width="24" height="199" rx="3"/>
+          </g>
+          <g fill="#e8c769" stroke="#a45a00" stroke-width="1.5">
+            <rect x="153.5" y="62.8" width="22.6" height="31.4" rx="2.5"/><rect x="298.5" y="74.8" width="22.6" height="19.4" rx="2.5"/>
+            <rect x="443.5" y="44.8" width="22.6" height="49.4" rx="2.5"/><rect x="540.2" y="58.8" width="22.6" height="35.4" rx="2.5"/>
+          </g>
+          <line x1="44" y1="96" x2="624" y2="96" stroke="#201525" stroke-width="1.5" stroke-dasharray="5 5"/>
+          <text class="orc" x="624" y="88" text-anchor="end" font-size="12" font-weight="600" fill="#201525">Orçado</text>
+          <g class="ann">
+            <g stroke="#a45a00" stroke-width="1" opacity=".6"><line x1="164.8" y1="30" x2="164.8" y2="56"/><line x1="309.8" y1="30" x2="309.8" y2="68"/><line x1="551.5" y1="30" x2="551.5" y2="52"/></g>
+            <g font-size="12" font-weight="600" fill="#201525" text-anchor="middle">
+              <text x="164.8" y="22">Tráfego de saída</text><text x="309.8" y="22">Câmbio</text><text x="454.8" y="22">Capacidade parada</text><text x="551.5" y="22">Incidente</text>
+            </g>
+          </g>
+          <path d="M433 50 C441 31, 478 32, 481 60 C484 92, 471 109, 453 107 C431 105, 426 81, 429 60 C431 48, 444 40, 463 41" fill="none" stroke="#a45a00" stroke-width="2" stroke-linecap="round"/>
+          <g class="months" font-size="12" fill="#6f6475" text-anchor="middle">
+            <text x="68.2" y="318">jan</text><text x="116.5" y="318">fev</text><text x="164.8" y="318">mar</text><text x="213.2" y="318">abr</text><text x="261.5" y="318">mai</text><text x="309.8" y="318">jun</text><text x="358.2" y="318">jul</text><text x="406.5" y="318">ago</text><text x="454.8" y="318">set</text><text x="503.2" y="318">out</text><text x="551.5" y="318">nov</text><text x="599.8" y="318">dez</text>
+          </g>
+          <g class="months-s" font-size="22" fill="#6f6475" text-anchor="middle">
+            <text x="68.2" y="324">j</text><text x="116.5" y="324">f</text><text x="164.8" y="324">m</text><text x="213.2" y="324">a</text><text x="261.5" y="324">m</text><text x="309.8" y="324">j</text><text x="358.2" y="324">j</text><text x="406.5" y="324">a</text><text x="454.8" y="324">s</text><text x="503.2" y="324">o</text><text x="551.5" y="324">n</text><text x="599.8" y="324">d</text>
+          </g>
+        </g>
+      </svg>
+      <ul class="ann-list">
+        <li>Tráfego de saída<span>março</span></li><li>Câmbio<span>junho</span></li><li>Capacidade parada<span>setembro</span></li><li>Incidente<span>novembro</span></li>
+      </ul>
+      <div class="uf">
+        <div class="legend"><span><i class="in"></i>Dentro do orçado</span><span><i class="over"></i>Acima do orçado</span><span><i class="line"></i>Orçado</span></div>
+        <strong>4 de 12 meses acima do orçado</strong>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<main class="article">
+  <div class="wrap">
+    <article class="prose">
+      <h2 id="contexto">Por que a linha de nuvem é a que mais erra</h2>
+      <p>Toda linha do orçamento tem um teto. Folha, aluguel e licenças chegam com valor conhecido, e o financeiro fecha a planilha sabendo quanto vai pagar em março. A linha de nuvem chega com uma estimativa.</p>
+      <p>Ela muda com o uso, com o tráfego, com o câmbio e com o que acontece na operação. O problema não é gastar mais. É descobrir quanto só quando a fatura chega, com o mês já fechado e sem margem para corrigir.</p>
+      <p>Em 2027 essa linha ganha peso. A IA entra nos sistemas, os dados crescem e a infraestrutura vira assunto de diretoria, não só da TI. Quem fecha o orçamento agora decide com que grau de surpresa vai passar o ano.</p>
+      <div class="callout">Custo previsível não é custo fixo. É saber quanto o mês vai custar antes de confirmar, e é assim que a Optidata cobra.</div>
+
+      <p class="label kicker">O que a pesquisa mostra</p>
+      <h2 id="numeros">Gasto com nuvem é desafio para quase todas as empresas</h2>
+      <p>O relatório State of the Cloud, da Flexera, ouve todos os anos mais de 750 decisores de nuvem no mundo. As duas últimas edições mostram por que a conta é difícil de fechar.</p>
+      <div class="stats">
+        <div class="stat"><b>85%</b><p>das empresas apontam o gasto com nuvem como um dos principais desafios.</p><small>Flexera, State of the Cloud 2026</small></div>
+        <div class="stat"><b>29%</b><p>do gasto em nuvem é estimado como desperdício, a primeira alta em cinco anos.</p><small>Flexera, State of the Cloud 2026</small></div>
+        <div class="stat"><b>81%</b><p>já usam IA generativa. Um ano antes eram 72%.</p><small>Flexera, State of the Cloud 2026</small></div>
+        <div class="stat"><b>28%</b><p>de alta esperada no gasto com nuvem para o ano seguinte.</p><small>Flexera, State of the Cloud 2025</small></div>
+      </div>
+      <p class="source">Fontes: comunicados da Flexera sobre as edições <a href="https://www.flexera.com/about-us/press-center/flexera-finds-cloud-value-is-rising-while-ai-waste-grows">2026</a> e <a href="https://www.flexera.com/about-us/press-center/new-flexera-report-finds-84-percent-of-organizations-struggle-to-manage-cloud-spend">2025</a> do State of the Cloud.</p>
+      <div class="inline-cta">
+        <p>Onde a sua operação aparece nesses números? Mande a fatura atual e um especialista mostra como a mesma operação fica na Optidata em 2027.</p>
+        <a class="link" data-wa="numeros" href="#revisao">Revisar minha fatura no WhatsApp <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a>
+      </div>
+
+      <p class="label kicker">Os quatro estouros do gráfico</p>
+      <h2 id="pontos">Onde a fatura escapa e como fica na Optidata</h2>
+      <p>Os meses que passam da linha têm causas conhecidas e se repetem em quase toda fatura de nuvem. Na Optidata, cada uma delas tem resposta no modelo de cobrança ou na operação.</p>
+
+      <section class="point" id="trafego">
+        <div class="ph"><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-migration.svg" alt=""></span><h3><span class="tag">Março</span>Tráfego de saída</h3></div>
+        <p>Em muitas nuvens, cada gigabyte que sai do ambiente é cobrado à parte. É o backup copiado para outro lugar, a integração com um parceiro, o relatório que o cliente baixa. O volume muda de um mês para o outro, e a fatura muda junto.</p>
+        <div class="opt"><i class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i><div><span class="label">Na Optidata</span><span class="t">Tráfego de saída incluso em todo plano. Backup, integrações e downloads saem do ambiente sem virar linha extra na fatura.</span></div></div>
+      </section>
+
+      <section class="point" id="cambio">
+        <div class="ph"><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-price.svg" alt=""></span><h3><span class="tag">Junho</span>Câmbio</h3></div>
+        <p>Quando a cobrança vem em moeda estrangeira, a mesma infraestrutura custa um valor diferente a cada mês. O consumo fica igual e a linha sobe mesmo assim, por um movimento que ninguém na TI controla.</p>
+        <div class="opt"><i class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i><div><span class="label">Na Optidata</span><span class="t">Cobrança na moeda local, com regiões no Brasil e nos Estados Unidos. O valor do mês depende do que você usa, não do câmbio.</span></div></div>
+      </section>
+
+      <section class="point" id="capacidade">
+        <div class="ph"><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-compute.svg" alt=""></span><h3><span class="tag">Setembro</span>Capacidade parada</h3></div>
+        <p>Servidores dimensionados para o pico do ano ficam ligados, e pagos, nos outros onze meses. Ambientes de teste esquecidos, discos de máquinas que já foram apagadas e instâncias maiores que o necessário somam a fatia que a Flexera estima em 29% do gasto.</p>
+        <div class="opt"><i class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i><div><span class="label">Na Optidata</span><span class="t">Cobrança por hora, com o preço de cada item e a estimativa do mês antes de confirmar. Na revisão, o time aponta o que está ligado sem uso e o tamanho certo de cada máquina.</span></div></div>
+      </section>
+
+      <section class="point" id="incidente">
+        <div class="ph"><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-support.svg" alt=""></span><h3><span class="tag">Novembro</span>Incidente</h3></div>
+        <p>Queda, ataque ou atualização que deu errado não estão na planilha, mas aparecem na conta: horas extras do time, consultoria de emergência, suporte cobrado à parte e o custo da operação parada.</p>
+        <div class="opt"><i class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i><div><span class="label">Na Optidata</span><span class="t">Suporte humano 24/7 com engenheiros, primeira resposta média em menos de 8 minutos, e backup automático entre zonas.</span></div></div>
+      </section>
+
+      <div class="offer" id="revisao">
+        <span class="label">Revisão da fatura</span>
+        <h3>Mande a fatura de hoje. <span>Receba a conta de 2027.</span></h3>
+        <p>Um especialista da Optidata compara a sua fatura atual item por item e monta a estimativa de 2027 na Optidata, pronta para entrar no orçamento.</p>
+        <div class="og">
+          <div>
+            <ul class="steps">
+              <li><b>Agora</b>Você envia o PDF ou um print da fatura pelo WhatsApp.</li>
+              <li><b>No mesmo dia útil</b>Um especialista em cloud responde.</li>
+              <li><b>Na conversa</b>A estimativa de 2027, linha por linha.</li>
+            </ul>
+            <a class="btn" data-wa="oferta" href="#revisao"><svg class="wa" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.8a7.2 7.2 0 0 0-6.2 10.9L2.9 17l3.4-.9A7.2 7.2 0 1 0 10 2.8z"/></svg>Enviar minha fatura</a>
+          </div>
+          <div class="bill" aria-label="Exemplo de estimativa com valores ocultos">
+            <div class="bh"><div><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-optidata-logo-black.svg" alt="Optidata"><b>Estimativa 2027</b></div><small>Cobrança por hora<br>Moeda local</small></div>
+            <table>
+              <tr><td>Compute</td><td><span class="blur">0.000,00</span></td></tr>
+              <tr><td>Armazenamento</td><td><span class="blur">000,00</span></td></tr>
+              <tr><td>Bancos de dados</td><td><span class="blur">0.000,00</span></td></tr>
+              <tr><td>Tráfego de saída</td><td><span class="inc">Incluso<svg viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true"><path d="M8 22 C10 6, 88 4, 94 18 C99 32, 40 38, 14 33 C4 30, 3 18, 22 10" fill="none" stroke="#8d0de3" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></span></td></tr>
+              <tr class="tot"><td>Estimativa do mês</td><td><span class="blur">00.000,00</span></td></tr>
+            </table>
+            <p class="foot"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-price.svg" alt="">Preço visível antes de confirmar.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="label kicker">A linha nova do orçamento</p>
+      <h2 id="ia">IA entra em 2027 como linha própria</h2>
+      <p>Com 81% das empresas já usando IA generativa, a infraestrutura para rodar modelos entra no orçamento de 2027 com linha própria. É também onde o erro de dimensionamento sai mais caro.</p>
+      <p>Os dois erros mais comuns vão em direções opostas. No primeiro, a empresa contrata uma GPU específica que não comporta o projeto e paga caro por algo que não roda. No segundo, mantém uma placa inteira paga o mês todo para usar em alguns momentos, quando a inferência na GPU da Optidata resolveria.</p>
+      <p>Na Optidata, IA, sistemas críticos e dados ficam no mesmo ambiente, com time monitorando 24 horas e backup de tudo. Nada precisa sair deste ambiente para o modelo funcionar.</p>
+      <div class="aicard">
+        <span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-gpu.svg" alt=""></span>
+        <div>
+          <b>GPU dedicada ou inferência?</b>
+          <p>Antes de reservar verba para IA, um especialista dimensiona a carga com você e mostra qual das duas cabe no projeto.</p>
+          <a class="link" data-wa="ia" href="#revisao">Conversar sobre IA no WhatsApp <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a>
+        </div>
+      </div>
+
+      <p class="label kicker">Fechar 2027 com a Optidata</p>
+      <h2 id="entrega">O que você leva da revisão da fatura</h2>
+      <p>Na conversa com o especialista da Optidata, a linha de nuvem de 2027 sai pronta para a reunião de orçamento.</p>
+      <ul class="check">
+        <li><i><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i>A fatura atual separada por item: compute, armazenamento, bancos de dados, tráfego de saída e suporte.</li>
+        <li><i><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i>Os meses que passaram do orçado, com a causa de cada um.</li>
+        <li><i><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i>O que está ligado sem uso e o tamanho certo de cada máquina.</li>
+        <li><i><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i>A estimativa de 2027 na Optidata, com cobrança por hora na moeda local e tráfego de saída incluso.</li>
+        <li><i><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i>A linha de IA dimensionada: GPU dedicada ou inferência na GPU da Optidata.</li>
+        <li><i><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i>O plano de migração, montado com o seu time. A Techub migrou para a Optidata em um fim de semana.</li>
+        <li><i><svg viewBox="0 0 12 12" fill="none" stroke="#147a52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.3l2.3 2.2 4.7-5"/></svg></i>Backup automático entre zonas e suporte humano 24/7 desde o primeiro dia.</li>
+      </ul>
+      <div class="cta-row"><a class="btn lg" data-wa="entrega" href="#revisao"><svg class="wa" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.8a7.2 7.2 0 0 0-6.2 10.9L2.9 17l3.4-.9A7.2 7.2 0 1 0 10 2.8z"/></svg>Quero a minha estimativa de 2027</a></div>
+
+      <h2 id="conclusao">Por que fechar 2027 com a Optidata</h2>
+      <p>Fechar o orçamento de 2027 com a linha de nuvem certa não exige cortar projeto. Exige saber quanto cada recurso vai custar antes de confirmar, e contar com uma operação que não transforma cada incidente em despesa extra.</p>
+      <p>É assim que a Optidata funciona: uma plataforma full-stack de cloud, com CPU e GPU, em que você opera por conta própria ou deixa a operação com o nosso time. Cobrança por hora na moeda local, tráfego de saída incluso e custos até 50% menores.</p>
+      <p>O primeiro passo é mandar a fatura de hoje. Em uma conversa, você sai com a estimativa de 2027 na Optidata para levar à reunião de orçamento.</p>
+      <div class="cta-row"><a class="btn lg" data-wa="conclusao" href="#revisao"><svg class="wa" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.8a7.2 7.2 0 0 0-6.2 10.9L2.9 17l3.4-.9A7.2 7.2 0 1 0 10 2.8z"/></svg>Enviar minha fatura no WhatsApp</a></div>
+      <div class="author">
+        <div class="av"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-optidata-mark-dark.svg" alt=""></div>
+        <div><b>Equipe Optidata</b><small>Especialistas em cloud e infraestrutura da Optidata, que há 17 anos opera nuvem para empresas no Brasil e nos Estados Unidos.</small></div>
+      </div>
+    </article>
+
+    <aside class="aside" aria-label="Índice do artigo">
+      <div class="sticky">
+        <nav class="toc">
+          <p class="label">Índice</p>
+          <ol>
+            <li><a href="#contexto">Por que a linha de nuvem erra</a></li>
+            <li><a href="#numeros">O que a pesquisa mostra</a></li>
+            <li><a href="#pontos">Onde a fatura escapa</a></li>
+            <li><a href="#revisao">Revisão da fatura</a></li>
+            <li><a href="#ia">IA no orçamento</a></li>
+            <li><a href="#entrega">O que a revisão entrega</a></li>
+            <li><a href="#conclusao">Por que a Optidata</a></li>
+          </ol>
+        </nav>
+        <div class="side-cta">
+          <span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-support.svg" alt=""></span>
+          <b>Revisão da fatura</b>
+          <p>Mande a fatura atual e receba a estimativa de 2027, item por item.</p>
+          <a class="btn sm" data-wa="lateral" href="#revisao">Enviar no WhatsApp</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<section class="fold neutral how">
+  <div class="wrap grid">
+    <div class="mosaic">
+      <img class="a" src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-time-servidor.webp" alt="Engenheiro da Optidata em manutenção de servidor">
+      <img class="b" src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-time-noc.webp" alt="Engenheiros da Optidata trabalhando no escritório">
+      <img class="c" src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-time-operacao.webp" alt="Time de operações da Optidata em suas estações de trabalho">
+    </div>
+    <div>
+      <p class="label">Sem formulário</p>
+      <h2 class="h2" style="margin-top:12px">Como funciona a revisão da fatura</h2>
+      <p class="lede" style="margin-top:14px">Quem responde é uma pessoa do time de especialistas em cloud da Optidata, não um robô.</p>
+      <ul class="how-steps">
+        <li><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-self-serve.svg" alt=""></span><div><b>Agora</b><span>Você clica em qualquer botão desta página e abre o WhatsApp com uma mensagem pronta. Envie a fatura em PDF ou print.</span></div></li>
+        <li><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-support.svg" alt=""></span><div><b>No mesmo dia útil</b><span>Um especialista em cloud da Optidata responde e combina os próximos passos.</span></div></li>
+        <li><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-price.svg" alt=""></span><div><b>Na conversa</b><span>Ele entende a sua operação, compara a fatura item por item e devolve a estimativa de 2027 na Optidata.</span></div></li>
+      </ul>
+      <a class="btn lg" data-wa="como-funciona" href="#revisao"><svg class="wa" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.8a7.2 7.2 0 0 0-6.2 10.9L2.9 17l3.4-.9A7.2 7.2 0 1 0 10 2.8z"/></svg>Revisar minha fatura no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="fold cases">
+  <div class="wrap">
+    <div class="head-c">
+      <p class="label">Cases</p>
+      <h2 class="h2">Times que rodam cargas críticas na Optidata</h2>
+    </div>
+    <div class="grid">
+      <article class="case big">
+        <div class="txt">
+          <q>Hoje eu consigo dizer para o conselho: estamos prontos para crescer. Podemos abrir filiais sem tocar na infraestrutura. E o melhor é que os próprios usuários perceberam a diferença.</q>
+          <div class="who"><b>Denis Murillo dos Santos</b><small>Coordenador de TI, Porsche Bexp</small></div>
+          <a class="link" href="https://www.optidata.com/br/cases/case-bexp">Ler o case <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a>
+        </div>
+        <img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-foto-bexp.webp" alt="Fachada da Porsche Center São Paulo">
+      </article>
+      <article class="case">
+        <q>No fim de semana a gente migrou, de forma transparente. Os clientes nem perceberam que tinha algum tipo de alteração no ambiente.</q>
+        <div class="who"><b>Alexandre Ilinsky Jr.</b><small>Gerente de Desenvolvimento de Software, Techub</small></div>
+        <a class="link" href="https://www.optidata.com/br/cases/blog-techub">Ler o case <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a>
+      </article>
+      <article class="case">
+        <q>Eu ganhei um corpo técnico. Eles estão comigo. Quando preciso resolver algo com urgência, eles atuam como se estivessem dentro da empresa.</q>
+        <div class="who"><b>Rogério Malta</b><small>Coordenador de Infraestrutura, Inovadora</small></div>
+        <a class="link" href="https://www.optidata.com/br/cases/case-inovadora">Ler o case <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a>
+      </article>
+    </div>
+    <div class="all"><a class="link" href="https://www.optidata.com/br/cases">Ver todos os cases de clientes <svg class="chev" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5"/></svg></a></div>
+  </div>
+</section>
+
+<section class="fold" style="padding-top:0">
+  <div class="wrap">
+    <div class="trust">
+      <div class="top-row">
+        <div><p class="label">Segurança e governança</p><h2 class="h2">Certificada na operação, não só no prédio</h2></div>
+        <p>A SOC 2 Type II e a ISO 27001 cobrem a operação de cloud da Optidata, com auditorias independentes. Os data centers onde operamos têm certificações próprias.</p>
+      </div>
+      <div class="seals">
+        <div class="grp"><p class="label">Certificações da Optidata</p><div class="row"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-soc2.png" alt="SOC 2 Type II"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-27001.png" alt="ISO 27001"></div></div>
+        <span class="sep" aria-hidden="true"></span>
+        <div class="grp"><p class="label">Data centers onde operamos</p><div class="row"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-facility.png" alt="TIER III Facility"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-design.png" alt="TIER III Design"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-pcj-dss.png" alt="PCI DSS Compliant"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-soc1.png" alt="SOC 1 Type II"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-soc2.png" alt="SOC 2 Type II"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-27701.png" alt="ISO 27701"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-27001.png" alt="ISO 27001"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-22301.png" alt="ISO 22301"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-cert-9001.png" alt="ISO 9001"></div></div>
+      </div>
+    </div>
+    <div class="nums">
+      <div><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-account.svg" alt=""></span><b>7.000+</b><span class="d">empresas atendidas</span></div>
+      <div><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-owned-stack.svg" alt=""></span><b>17 anos</b><span class="d">operando nuvem para empresas</span></div>
+      <div><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-regions.svg" alt=""></span><b>5</b><span class="d">regiões de data center que construímos e operamos</span></div>
+      <div><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-sla.svg" alt=""></span><b>24/7</b><span class="d">suporte humano, primeira resposta média em menos de 8 minutos</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="fold neutral faq" id="perguntas">
+  <div class="wrap grid">
+    <div class="head-c">
+      <p class="label">Perguntas frequentes</p>
+      <h2 class="h2">Sobre a revisão da fatura</h2>
+      <p class="lede">Não encontrou a sua dúvida? <a class="link" data-wa="faq" href="#revisao">Pergunte no WhatsApp</a></p>
+    </div>
+    <div>
+      <details open><summary>Preciso mandar a fatura inteira?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Não. Um PDF ou print com os itens de cobrança basta. O que importa para a estimativa são os recursos e os volumes de cada mês.</p></details>
+      <details><summary>A revisão tem custo?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Não. É uma conversa técnica, sem compromisso de contratação.</p></details>
+      <details><summary>Vocês atendem quem está em outra nuvem hoje?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Sim. A revisão compara a fatura atual, de qualquer nuvem, com a estimativa na Optidata. Se fizer sentido migrar, o time da Optidata planeja a migração com você.</p></details>
+      <details><summary>Quero contratar. Qual é o próximo passo?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Mande a fatura pelo WhatsApp. Depois da estimativa, o especialista monta a proposta e o plano de migração com o seu time.</p></details>
+      <details><summary>Como funciona a cobrança na Optidata?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Por hora, na moeda local. A plataforma mostra o preço de cada item e a estimativa do mês antes de você confirmar, e o tráfego de saída está incluso em todo plano.</p></details>
+      <details><summary>Posso operar por conta própria depois?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Pode. Na Optidata Cloud AI Platform você opera por conta própria na plataforma, ou deixa a operação com o nosso time.</p></details>
+      <details><summary>Onde ficam os dados?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Em regiões de data center que a Optidata construiu e opera, no Brasil e nos Estados Unidos. Você escolhe a região de cada recurso.</p></details>
+      <details><summary>O que acontece com a fatura que eu enviar?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Ela é usada só para montar a sua estimativa e fica com o time comercial da Optidata, conforme o <a class="link" href="https://www.optidata.com/br/privacy-notice">Aviso de Privacidade</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <p class="label">Planejamento 2027</p>
+    <h2>Feche 2027 com a Optidata, sabendo quanto a nuvem vai custar.</h2>
+    <p>Mande a fatura de hoje pelo WhatsApp e receba a estimativa de 2027 na Optidata, item por item.</p>
+    <div class="ctas">
+      <a class="btn lg" data-wa="final" href="#revisao"><svg class="wa" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.8a7.2 7.2 0 0 0-6.2 10.9L2.9 17l3.4-.9A7.2 7.2 0 1 0 10 2.8z"/></svg>Revisar minha fatura no WhatsApp</a>
+      <a class="btn lg ghost-d" href="https://www.optidata.com/br">Conhecer a Optidata</a>
+    </div>
+    <small>Ao clicar, o WhatsApp abre com uma mensagem pronta. Seu número e a mensagem são compartilhados com a Optidata, conforme o <a href="https://www.optidata.com/br/privacy-notice">Aviso de Privacidade</a>.</small>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fr">
+      <div>
+        <a class="logo" href="https://www.optidata.com/br"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-optidata-logo-white.svg" alt="Optidata" width="166" height="28"></a>
+        <p class="about">Cloud full-stack com alta performance, preços transparentes, tráfego de saída incluso em todo plano e suporte humano.</p>
+      </div>
+      <p class="sig">Implemente em minutos. Segurança por padrão.<br><span>Custos previsíveis.</span></p>
+    </div>
+    <div class="offices">
+      <div><b>Optidata US</b>848 Brickell Ave, Suite 203<br>Miami, FL, Estados Unidos</div>
+      <div><b>Optidata SP</b>Av. Dr. Chucri Zaidan, 1550, Conj. 507<br>São Paulo, SP, Brasil</div>
+      <div><b>Optidata SC</b>Av. Nereu Ramos, 1866 E, 4º andar<br>Chapecó, SC, Brasil</div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Optidata. Todos os direitos reservados.</span>
+      <nav aria-label="Links institucionais"><a href="https://www.optidata.com/br/policies">Política de Privacidade</a><a href="https://www.optidata.com/br/privacy-notice">Aviso de Privacidade</a><a href="https://www.optidata.com/br/terms-of-service">Termos de Uso</a><a href="https://www.instagram.com/optidatacloud/">Instagram</a><a href="https://www.linkedin.com/company/optidata-solutions">LinkedIn</a><a href="https://www.youtube.com/@optidatacloud">YouTube</a></nav>
+    </div>
+  </div>
+</footer>
+
+<a class="float" data-wa="flutuante" href="#revisao" aria-label="Falar com um especialista no WhatsApp">
+  <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.8a7.2 7.2 0 0 0-6.2 10.9L2.9 17l3.4-.9A7.2 7.2 0 1 0 10 2.8z"/></svg>
+  <span>Tirar uma dúvida</span>
+</a>
+
+<script>
+// Número do WhatsApp comercial a definir (só dígitos, com 55 e DDD). Enquanto estiver vazio,
+// os botões levam ao formulário de contato do site.
+const WA_NUMERO = '5524992595703'; // +55 24 99259-5703
+const SEM_WA = 'https://www.optidata.com/br/contact';
+const MSG = {
+  topo: 'Olá! Li o artigo da Optidata sobre o orçamento de nuvem de 2027 e quero falar com um especialista.',
+  hero: 'Olá! Li o artigo sobre o orçamento de nuvem de 2027 e quero revisar minha fatura com a Optidata.',
+  numeros: 'Olá! Quero entender onde a minha operação aparece nos números de custo de nuvem do artigo.',
+  oferta: 'Olá! Quero enviar minha fatura de nuvem atual e receber a estimativa de 2027 na Optidata.',
+  lateral: 'Olá! Quero enviar minha fatura de nuvem atual e receber a estimativa de 2027 na Optidata.',
+  ia: 'Olá! Vou colocar IA no orçamento de 2027 e quero conversar sobre GPU dedicada ou inferência.',
+  'como-funciona': 'Olá! Quero revisar minha fatura de nuvem e receber a estimativa de 2027 na Optidata.',
+  faq: 'Olá! Estou lendo o artigo de planejamento 2027 da Optidata e tenho uma dúvida sobre a revisão da fatura.',
+  entrega: 'Olá! Quero a revisão da minha fatura de nuvem e a estimativa de 2027 na Optidata.',
+  conclusao: 'Olá! Quero mandar minha fatura de nuvem e fechar 2027 com a Optidata.',
+  final: 'Olá! Terminei de ler o artigo de planejamento 2027 e quero revisar minha linha de nuvem com a Optidata.',
+  flutuante: 'Olá! Estou lendo o artigo da Optidata sobre o orçamento de 2027 e tenho uma dúvida.'
+};
+document.querySelectorAll('[data-wa]').forEach(a => {
+  a.href = WA_NUMERO ? 'https://wa.me/' + WA_NUMERO + '?text=' + encodeURIComponent(MSG[a.dataset.wa] || MSG.flutuante) : SEM_WA;
+  a.target = '_blank'; a.rel = 'noopener';
+});
+// Índice: destaca a seção em leitura
+const links = [...document.querySelectorAll('.toc a')];
+const alvos = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+if ('IntersectionObserver' in window && alvos.length) {
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id)); });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  alvos.forEach(t => io.observe(t));
+}
+</script>
+</body>
+</html>

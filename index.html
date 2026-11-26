@@ -9,7 +9,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="O orçamento de 2027 fecha em dezembro. A fatura da nuvem, não.">
 <meta property="og:description" content="Mande a fatura de hoje e receba a estimativa de 2027 na Optidata, com custo previsível, tráfego de saída incluso e cobrança na moeda local.">
-<!-- Pendências: confirmar que o form-webhook do site recebe o anexo e onde ele é guardado, prazo de retenção da fatura, URL definitiva, assinatura do artigo -->
+<!-- Pendências: canal de envio da fatura, onde ela é guardada e prazo de retenção, URL definitiva, assinatura do artigo -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -573,11 +573,11 @@ footer a:hover{color:#fff}
         <div class="og">
           <div>
             <ul class="steps">
-              <li><b>Agora</b>Você preenche o formulário e anexa a fatura.</li>
-              <li><b>No mesmo dia útil</b>Um especialista em cloud entra em contato.</li>
+              <li><b>Agora</b>Você preenche o formulário.</li>
+              <li><b>No mesmo dia útil</b>Um especialista em cloud entra em contato e combina o envio da fatura.</li>
               <li><b>Na conversa</b>A estimativa de 2027, linha por linha.</li>
             </ul>
-            <a class="btn" data-cta="oferta" href="#revisao">Enviar minha fatura</a>
+            <a class="btn" data-cta="oferta" href="#revisao">Revisar minha fatura</a>
           </div>
           <div class="bill" aria-label="Exemplo de estimativa com valores ocultos">
             <div class="bh"><div><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-optidata-logo-black.svg" alt="Optidata"><b>Estimativa 2027</b></div><small>Custo previsível<br>Moeda local</small></div>
@@ -626,7 +626,7 @@ footer a:hover{color:#fff}
       <p>Fechar o orçamento de 2027 com a linha de nuvem certa não exige cortar projeto. Exige custo previsível e uma operação que não transforma cada incidente em despesa extra.</p>
       <p>É o que a Optidata faz desde 2009: cloud desenhada pelos nossos arquitetos, operada pelo nosso time, certificada na operação e cobrada com custo previsível, na moeda local, com tráfego de saída incluso. Hoje são mais de 7.000 empresas com sistemas críticos rodando nessa operação.</p>
       <p>O primeiro passo é mandar a fatura de hoje. Em uma conversa, você sai com a estimativa de 2027 na Optidata para levar à reunião de orçamento.</p>
-      <div class="cta-row"><a class="btn lg" data-cta="conclusao" href="#revisao">Enviar minha fatura</a></div>
+      <div class="cta-row"><a class="btn lg" data-cta="conclusao" href="#revisao">Revisar minha fatura</a></div>
       <div class="author">
         <div class="av"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-optidata-mark-dark.svg" alt=""></div>
         <div><b>Equipe Optidata</b><small>Especialistas em cloud e infraestrutura da Optidata, que há 17 anos opera a infraestrutura cloud de empresas no Brasil e nos Estados Unidos.</small></div>
@@ -652,7 +652,7 @@ footer a:hover{color:#fff}
           <span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-support.svg" alt=""></span>
           <b>Revisão da fatura</b>
           <p>Mande a fatura atual e receba a estimativa de 2027, item por item.</p>
-          <a class="btn sm" data-cta="lateral" href="#revisao">Enviar a fatura</a>
+          <a class="btn sm" data-cta="lateral" href="#revisao">Revisar a fatura</a>
         </div>
       </div>
     </aside>
@@ -663,13 +663,13 @@ footer a:hover{color:#fff}
   <div class="wrap grid">
     <div class="fs-head">
       <p class="label">Revisão da fatura</p>
-      <h2 class="h2" style="margin-top:12px">Envie a fatura de hoje e receba a conta de 2027</h2>
+      <h2 class="h2" style="margin-top:12px">Peça a revisão da fatura e receba a conta de 2027</h2>
       <p class="lede" style="margin-top:14px">Quem responde é uma pessoa do time de especialistas em cloud da Optidata, não um robô.</p>
     </div>
     <div class="fs-info">
       <ul class="how-steps">
-        <li><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-self-serve.svg" alt=""></span><div><b>Agora</b><span>Você preenche o formulário e anexa a fatura em PDF ou imagem. Se preferir, envie a fatura depois.</span></div></li>
-        <li><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-support.svg" alt=""></span><div><b>No mesmo dia útil</b><span>Um especialista em cloud da Optidata entra em contato e combina os próximos passos.</span></div></li>
+        <li><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-self-serve.svg" alt=""></span><div><b>Agora</b><span>Você preenche o formulário com os dados da empresa e de onde a operação roda hoje.</span></div></li>
+        <li><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-support.svg" alt=""></span><div><b>No mesmo dia útil</b><span>Um especialista em cloud da Optidata entra em contato e combina com você o envio da fatura.</span></div></li>
         <li><span class="chip"><img src="https://drop.ip.odhserver.com/files/optidata-cloud/lp2027-icon-price.svg" alt=""></span><div><b>Na conversa</b><span>Ele entende a sua operação, compara a fatura item por item e devolve a estimativa de 2027 na Optidata.</span></div></li>
       </ul>
       <div class="privacy">
@@ -680,7 +680,7 @@ footer a:hover{color:#fff}
           <li><span>Antes de enviar</span>Você pode ocultar número de conta, endereço e o que não for cobrança de nuvem.</li>
           <li><span>Dúvidas</span>Pelo canal indicado no <a href="https://www.optidata.com/br/privacy-notice">Aviso de Privacidade</a>.</li>
         </ul>
-        <p class="pend">Pendente antes de ir ao ar: onde a fatura fica guardada e por quanto tempo (Jurídico e Segurança), e se o webhook de formulários do site recebe o anexo.</p>
+        <p class="pend">Pendente antes de ir ao ar: por qual canal a fatura chega, onde ela fica guardada e por quanto tempo (Jurídico e Segurança).</p>
       </div>
     </div>
     <form class="fcard" id="form-revisao" novalidate>
@@ -714,12 +714,7 @@ footer a:hover{color:#fff}
           <option value="sem-prazo">Ainda sem prazo</option>
         </select><em class="err">Escolha uma opção.</em></label>
       </div>
-      <label class="drop">
-        <input type="file" name="fatura" accept=".pdf,.png,.jpg,.jpeg,application/pdf,image/png,image/jpeg">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5"/><path d="M4 14v4.5A1.5 1.5 0 0 0 5.5 20h13a1.5 1.5 0 0 0 1.5-1.5V14"/></svg></span>
-        <span class="dt"><b>Anexar a fatura</b><small>PDF ou imagem, até 10 MB. Opcional: se preferir, o especialista pede depois.</small></span>
-      </label>
-      <label class="consent"><input type="checkbox" name="consentimento" value="sim" required><span>Concordo com o uso destes dados e da fatura para a revisão, conforme o <a href="https://www.optidata.com/br/privacy-notice">Aviso de Privacidade</a>.</span></label>
+      <label class="consent"><input type="checkbox" name="consentimento" value="sim" required><span>Concordo com o uso destes dados para a revisão da fatura, conforme o <a href="https://www.optidata.com/br/privacy-notice">Aviso de Privacidade</a>.</span></label>
       <input type="hidden" name="nome_do_formulario" value="(Cloud) LP Planejamento 2027">
       <input type="hidden" name="url_da_pagina"><input type="hidden" name="idioma_da_pagina" value="br"><input type="hidden" name="origem_cta">
       <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term"><input type="hidden" name="utm_id">
@@ -794,7 +789,7 @@ footer a:hover{color:#fff}
       <details open><summary>Preciso mandar a fatura inteira?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Não. Um PDF ou print com os itens de cobrança basta. O que importa para a estimativa são os recursos e os volumes de cada mês.</p></details>
       <details><summary>A revisão tem custo?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Não. É uma conversa técnica, sem compromisso de contratação.</p></details>
       <details><summary>Vocês atendem quem está em outra nuvem hoje?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Sim. A revisão compara a fatura atual, de qualquer nuvem, com a estimativa na Optidata. Quem ainda roda servidor dentro de casa também pode mandar o que gasta hoje. Se fizer sentido migrar, o time da Optidata planeja a migração com você.</p></details>
-      <details><summary>Quero contratar. Qual é o próximo passo?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Envie a fatura pelo formulário desta página. Depois da estimativa, o especialista monta a proposta e o plano de migração com o seu time.</p></details>
+      <details><summary>Quero contratar. Qual é o próximo passo?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Preencha o formulário desta página. O especialista combina com você o envio da fatura e, depois da estimativa, monta a proposta e o plano de migração com o seu time.</p></details>
       <details><summary>Como funciona a cobrança na Optidata?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>Numa fatura mensal, na moeda local, com custo previsível. O ambiente é dimensionado com o seu time antes da contratação, a proposta mostra o valor de cada item e o tráfego de saída está incluso.</p></details>
       <details><summary>O valor da fatura nunca muda?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>A previsibilidade vale para a infraestrutura contratada: você conhece o custo antes de o mês começar. Se o escopo mudar, com novas máquinas, mais capacidade ou outros serviços, o valor muda junto, e a mudança é combinada com você antes de entrar na fatura.</p></details>
       <details><summary>Quem opera o ambiente no dia a dia?<svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 3.5v11M3.5 9h11"/></svg></summary><p>O time da Optidata. Os arquitetos desenham o ambiente, o NOC e o SOC acompanham a operação 24 horas e o suporte é feito por engenheiros, sem fornecedor no meio entre o chamado e a correção.</p></details>
@@ -845,7 +840,7 @@ footer a:hover{color:#fff}
 </a>
 
 <script>
-// O WhatsApp fica só para dúvidas (FAQ e botão flutuante). A fatura vai pelo formulário (#revisao),
+// O WhatsApp fica só para dúvidas (FAQ e botão flutuante). O pedido de revisão vai pelo formulário (#revisao), sem anexo desde 26/11/2026,
 // como pediu o parecer do CRO de 24/11/2026.
 const WA_NUMERO = '5524992595703'; // +55 24 99259-5703
 const MSG = {
@@ -862,7 +857,6 @@ document.querySelectorAll('[data-wa]').forEach(a => {
 const FORM_ACTION = 'https://hocfjmjqqwfsreeofucw.supabase.co/functions/v1/form-webhook';
 const TURNSTILE_SITEKEY = '0x4AAAAAAB2HPwIPDqm82jVb';
 const AO_VIVO = /(^|\.)optidata\.com$/.test(location.hostname);
-const MAX_MB = 10;
 const LIVRES = /@(gmail|googlemail|hotmail|outlook|live|msn|yahoo|ymail|icloud|me|bol|uol|terra|ig|zipmail)\.(com|com\.br|br)$/i;
 const form = document.getElementById('form-revisao');
 const camada = (ev, extra) => { (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: ev }, extra)); };
@@ -887,24 +881,6 @@ if (form) {
     document.head.appendChild(t);
   }
 
-  // anexo
-  const drop = form.querySelector('.drop'), arq = form.elements.fatura;
-  const dropB = drop.querySelector('b'), dropS = drop.querySelector('small');
-  const dropTxt = [dropB.textContent, dropS.textContent];
-  const confereArq = () => {
-    const f = arq.files[0];
-    drop.classList.remove('bad', 'has');
-    if (!f) { [dropB.textContent, dropS.textContent] = dropTxt; return true; }
-    const ok = /\.(pdf|png|jpe?g)$/i.test(f.name) && f.size <= MAX_MB * 1024 * 1024;
-    dropB.textContent = f.name;
-    const tam = f.size < 1024 * 1024 ? Math.max(1, Math.round(f.size / 1024)) + ' KB' : (f.size / 1024 / 1024).toFixed(1).replace('.', ',') + ' MB';
-    dropS.textContent = ok ? `${tam}. Clique para trocar.` : `Use PDF, PNG ou JPG de até ${MAX_MB} MB.`;
-    drop.classList.add(ok ? 'has' : 'bad');
-    return ok;
-  };
-  arq.addEventListener('change', confereArq);
-  ['dragenter', 'dragover'].forEach(ev => drop.addEventListener(ev, () => drop.classList.add('over')));
-  ['dragleave', 'drop'].forEach(ev => drop.addEventListener(ev, () => drop.classList.remove('over')));
 
   // validação
   const confere = el => {
@@ -942,21 +918,19 @@ if (form) {
     msg.textContent = ''; msg.classList.remove('err');
     const campos = [...form.querySelectorAll('.fld input, .fld select')];
     const okCampos = campos.map(confere).every(Boolean);
-    const okArq = confereArq();
     aceite.closest('.consent').classList.toggle('bad', !aceite.checked);
-    if (!okCampos || !okArq || !aceite.checked) {
+    if (!okCampos || !aceite.checked) {
       msg.textContent = 'Confira os campos destacados.'; msg.classList.add('err');
-      (form.querySelector('.fld.bad input, .fld.bad select') || (okArq ? aceite : arq)).focus();
+      (form.querySelector('.fld.bad input, .fld.bad select') || aceite).focus();
       return;
     }
-    const comFatura = !!arq.files[0];
-    if (!AO_VIVO) { camada('lp2027_envio', { cta: form.elements.origem_cta.value, com_fatura: comFatura, preview: true }); pronto(true); return; }
+    if (!AO_VIVO) { camada('lp2027_envio', { cta: form.elements.origem_cta.value, preview: true }); pronto(true); return; }
     btn.disabled = true; btn.textContent = 'Enviando...';
     try {
       if (!(await token())) throw new Error('turnstile');
       const r = await fetch(FORM_ACTION, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
       if (!r.ok) throw new Error('http ' + r.status);
-      camada('lp2027_envio', { cta: form.elements.origem_cta.value, com_fatura: comFatura });
+      camada('lp2027_envio', { cta: form.elements.origem_cta.value });
       if (window.fbq) fbq('track', 'Lead');
       pronto(false);
     } catch (err) {
